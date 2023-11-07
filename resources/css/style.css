@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    
+    color: #555;
+    display: grid;
+    font-family: Lato,sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.row{
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/hero.jpg");
+    height: 100vh;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-position: center;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    margin-right: 25px;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]{
+    background-color: orangered;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid orange;
+    color: orange;
+}
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]{
+    background-color: orangered;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    border:1px solid orange;
+    background-color: orangered;
+    color: white;
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+    list-style:none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    
+}
+.myElement li{
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 5px 5px;
+    box-shadow: 0 10px 20px rgba(12, 11, 11, 0.972), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+.myElement li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(186, 220, 217, 0.25), 0 10px 10px rgba(237, 187, 187, 0.22),0 0 0 5px;
+}
+section{
+    padding: 80px 0px;  
+}
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2::after{
+    content:'';
+    display: block;
+    height: 2px;
+    background:orange;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+.box{
+    padding: 1%;
+} 
+.box
+
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: orange;
+    margin-bottom: 10px;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+
+}
+.meals-showcase li{
+ display: block;
+ float: left;
+ width: 25%;
+}
+.meal-pic{
+    width: 100%;
+    margin: 0;
+    overflow: hidden; /*hides the extra photo*/
+    background-color: black;
+}
+.meal-pic img{
+    width: 100%;
+    transform: scale(1.15); /*applies a scaling transformation to the image, enlarging it by a factor of 1.15. This makes the image 15% larger.*/
+    height: auto;
+    opacity: 0.7;
+}
+.meal-pic img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+    transition: transform 0.3s;
+    
+}
+.clearfix {zoom:1}
+.clearfix::after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.section-meals{
+    padding: 0;
+}
+
+.section-feature .long-copy{
+    margin-bottom: 30px;
+}
+.works-step{
+    margin-bottom: 50px;
+    margin-right:25px;
+}
+.box
+box{
+    margin-top: 30px;
+}
+.steps-box:first-child{ /*we can maniulate the first element present inside the steps-box class*/
+text-align: center;
+padding-right: 3%;
+margin-bottom: 30px;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.app-screen{
+    width: 40%;
+    box-shadow:5px 5px 5px #aaaaaa ;
+    border-radius: 45px;
+}
+
+.works-step div{
+    color:orange;
+    border:4px solid orange;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 25px;
+    float: left;
+    font-size: 150%;
+}
+.works-step p{
+    padding: 10px;
+}
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.btn-app1 img{
+    height: 35%;
+    width: 35%;
+    margin-right: 10px;
+    margin-bottom: 10%;
+}
+.btn-app1:link,
+.btn-app1:visited{
+    border:0;
+}
+.btn-app2 img{
+    height: 30%;
+    width:30%;
+    margin-right: 10px;
+    margin-bottom: 5.7%;
+}
+.btn-app2:link,
+.btn-app2:visited{
+    border:0;
+}
+
+.section-steps{
+
+    background-color: #f4f4f4;
+    
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feature{
+    margin-bottom: 5px;
+}
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: orange;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+.section-cities a:link,
+.section-cities a:visited{
+    color: orange;
+    text-decoration: none;
+    border-bottom: 1px solid orange;
+    padding-bottom:1px ;
+}
+.section-cities a:hover,
+.section-cities a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s,color 0.5s;
+}
+.section-cities{
+background-color: beige;
+    
+}
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+cite img{
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+blockquote::before{
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -3px;
+}
+.section-plans{
+    background-color: #f4f4f4;
+}
+.plan-box{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: orange;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+.plan-box div:last-child{
+    border: 0;
+    text-align: center;
+}
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+}
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius:3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100%;
+}
+input[type=checkbox]{
+    margin: 10px 5px 10px 0px;
+    
+}
+
+footer{
+    background-color: #333;
+    font-size: 80%;
+    padding: 50px;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links li{
+    list-style: none;
+    float: right;
+    color: #918f8f;
+    transform: scale(1.2);
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+    color:white;
+    font-weight: 500;
+}
+
+
+.footer-nav li a {
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+.footer-nav li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+.footer-nav li a:hover,
+.footer-nav li a:focus {
+  color: orange;
+}
+
+.footer-nav li a:hover::after,
+.footer-nav li a:focus::after {
+  transform: scaleX(1);
+}
+.social-links li{
+transition: all 0.3s ease-in-out;
+}
+
+.social-links li:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 15px 15px rgba(186, 220, 217, 0.25)) drop-shadow(0 10px 10px rgba(237, 187, 187, 0.22));
+}
+
+footer p{
+    color: #918f8f;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+.fb:hover{
+    color:#3b5998 ;
+}
+.insta:hover{
+    color:#517fa4;
+}
+.tweet:hover{
+    color: #00aced;
+}
+.google:hover{
+    color: #dd4b39;
+}
